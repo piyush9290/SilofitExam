@@ -34,8 +34,8 @@ final class RootRouterFactory: NavigationRouterFactory {
             return .right(landingPageUseCase(actionConfig))
         case let .loginRegisterPageUseCase(actionType, backAction, completion):
             return .right(loginRegisterPageUseCase(actionType, backAction, completion))
-        case .mapUseCase:
-            return .right(mapViewUseCase())
+        case let .mapUseCase(backAction, nextAction):
+            return .right(mapViewUseCase(backAction, nextAction))
         default: return .wrong(RouterError.unknownState(state))
         }
     }
@@ -64,11 +64,13 @@ final class RootRouterFactory: NavigationRouterFactory {
         return LoginRegisterPageUseCase(config: config)
     }
     
-    private func mapViewUseCase() -> Routable {
+    private func mapViewUseCase(_ backAction: VoidClosure?,_ listTapAction: VoidClosure?) -> Routable {
         let config = MapViewUseCaseConfig(theme: serviceProvider.theme,
                                           spacesInfoProvider: serviceProvider.spaceInfoStorage,
-                                          backAction: nil,
-                                          listTapAction: nil)
+                                          authenticateService: serviceProvider.authenticateService,
+                                          deleteUserInfoService: serviceProvider.userInfoSaverService,
+                                          backAction: backAction,
+                                          listTapAction: listTapAction)
         return MapViewUseCase(config: config)
     }
 }

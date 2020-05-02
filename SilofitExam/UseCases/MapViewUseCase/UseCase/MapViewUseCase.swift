@@ -12,6 +12,8 @@ import UIKit
 struct MapViewUseCaseConfig {
     let theme: Theme
     let spacesInfoProvider: SpaceInfoStorage
+    let authenticateService: Authenticator
+    let deleteUserInfoService: LoginUserInfoSaver
     let backAction: VoidClosure?
     let listTapAction: VoidClosure?
 }
@@ -22,7 +24,15 @@ final class MapViewUseCase: Routable {
     let interactor: Readyable
     
     init(config: MapViewUseCaseConfig) {
-        let navModel = NavigationBarModel(leftModel: .init(title: "Log out", action: config.backAction),
+        let logoutAction: VoidClosure = {
+            config.authenticateService.signOut { (result) in
+                result.do(work: { _ in
+                    config.deleteUserInfoService.deleteUserInfo()
+                    config.backAction?()
+                })
+            }
+        }
+        let navModel = NavigationBarModel(leftModel: .init(title: "Log out", action: logoutAction),
                                           righModel: .init(title: "List", action: config.listTapAction))
         output = MapViewController(theme: config.theme,
                                    navModel: navModel)

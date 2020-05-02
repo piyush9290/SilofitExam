@@ -29,7 +29,8 @@ final class RootRouter: NavigationRouter<RootRouterMapProvider, RootRouterFactor
         case (.initial, .landingPageUseCase),
              (.landingPageUseCase, .loginRegisterPageUseCase),
              (.initial, .mapUseCase),
-             (.loginRegisterPageUseCase, .mapUseCase):
+             (.loginRegisterPageUseCase, .mapUseCase),
+             (.mapUseCase, .landingPageUseCase):
             pushRoutableForState(state: nextState, fromState: from, withCompletion: completion)
         case (.loginRegisterPageUseCase, .landingPageUseCase):
             popRoutable(fromState: from, toState: nextState, completion: completion)
@@ -65,7 +66,11 @@ final class RootRouter: NavigationRouter<RootRouterMapProvider, RootRouterFactor
     }
     
     private func pushMapViewUseCase() {
-        pushState(.mapUseCase)
+        let logoutAction: VoidClosure = { [weak self] in
+            self?.pushLandingPageUseCase()
+        }
+        pushState(.mapUseCase(backAction: logoutAction,
+                              nextAction: nil))
     }
     
     private func back() {

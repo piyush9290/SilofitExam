@@ -1,9 +1,6 @@
 PODS:
   - AHContainer (0.2.2):
     - ALEither
-  - AHNetwork (0.3.1):
-    - ALEither
-    - EitherResult
   - ALEither (0.1.8)
   - EitherResult (0.1.5)
   - Firebase/Auth (6.20.0):
@@ -68,7 +65,6 @@ PODS:
 
 DEPENDENCIES:
   - AHContainer
-  - AHNetwork
   - EitherResult
   - Firebase/Auth
   - Firebase/Database
@@ -77,7 +73,6 @@ DEPENDENCIES:
 SPEC REPOS:
   https://github.com/CocoaPods/Specs.git:
     - AHContainer
-    - AHNetwork
     - ALEither
     - EitherResult
     - Firebase
@@ -98,7 +93,6 @@ SPEC REPOS:
 
 SPEC CHECKSUMS:
   AHContainer: 870bb0204341298f60d40eacb6185c6a7e41a4ef
-  AHNetwork: 4aed90a3b1388f05be87467faefeb85949e3f762
   ALEither: 57cfaba77b3a2c2e15741b16213b515d9bc839a6
   EitherResult: 9a67a8cd25fa6d6f8ded0e7304ea2eb302bcbbc8
   Firebase: fe7f74012742ab403451dd283e6909b8f1fb348a
@@ -117,6 +111,6 @@ SPEC CHECKSUMS:
   RouterStateMachine: 9cc1a4d966b13844be38e2196dd2604256e1dd8a
   SwiftyCollection: b97f5697570e7b4357db4e7fa2f6712a5a27cdab
 
-PODFILE CHECKSUM: 2d59bf6ea25c26ee7b64b2c4dd5b914bea789fb4
+PODFILE CHECKSUM: 331898a930cf61b77db4e9f023f0144f76f739d9
 
 COCOAPODS: 1.9.0

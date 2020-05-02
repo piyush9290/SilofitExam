@@ -13,9 +13,6 @@ def import_pods
 #    pod 'Firebase
     pod 'Firebase/Database'
     pod 'Firebase/Auth'
-    
-    # Network Library
-    pod 'AHNetwork'
 end
 
 target 'SilofitExam' do

@@ -14,5 +14,5 @@ enum RootRouterState: State {
     case initial
     case landingPageUseCase(LandingPageUseCaseActionConfig)
     case loginRegisterPageUseCase(type: ActionType, backAction: VoidClosure?, completion: VoidClosure?)
-    case mapUseCase
+    case mapUseCase(backAction: VoidClosure?, nextAction: VoidClosure?)
 }

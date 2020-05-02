@@ -1,6 +1,5 @@
 ${PODS_ROOT}/Target Support Files/Pods-SilofitExam/Pods-SilofitExam-frameworks.sh
 ${BUILT_PRODUCTS_DIR}/AHContainer/AHContainer.framework
-${BUILT_PRODUCTS_DIR}/AHNetwork/AHNetwork.framework
 ${BUILT_PRODUCTS_DIR}/ALEither/ALEither.framework
 ${BUILT_PRODUCTS_DIR}/EitherResult/EitherResult.framework
 ${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework

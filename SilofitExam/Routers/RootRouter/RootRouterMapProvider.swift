@@ -18,7 +18,8 @@ final class RootRouterMapProvider: StateProvider {
              (.landingPageUseCase, .loginRegisterPageUseCase),
              (.loginRegisterPageUseCase, .landingPageUseCase),
              (.initial, .mapUseCase),
-             (.loginRegisterPageUseCase, .mapUseCase): return true
+             (.loginRegisterPageUseCase, .mapUseCase),
+             (.mapUseCase, .landingPageUseCase): return true
         default: return false
         }
     }

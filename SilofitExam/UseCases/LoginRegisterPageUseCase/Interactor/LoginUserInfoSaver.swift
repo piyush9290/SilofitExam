@@ -34,7 +34,7 @@ final class LoginUserInfoSaverImp: LoginUserInfoSaver {
     }
     
     func readUserInfo() -> ALResult<String> {
-        guard let userId: String = userDefaults.read(at: userIdKey) else {
+        guard let userId: String = userDefaults.read(at: userIdKey), !userId.isEmpty else {
             return .wrong(LoginUserInfoSaverError.userNotSet)
         }
         return .right(userId)

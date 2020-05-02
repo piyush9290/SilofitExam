@@ -198,7 +198,6 @@ fi
 
 if [[ "$CONFIGURATION" == "Debug" ]]; then
   install_framework "${BUILT_PRODUCTS_DIR}/AHContainer/AHContainer.framework"
-  install_framework "${BUILT_PRODUCTS_DIR}/AHNetwork/AHNetwork.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/ALEither/ALEither.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/EitherResult/EitherResult.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework"
@@ -210,7 +209,6 @@ if [[ "$CONFIGURATION" == "Debug" ]]; then
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
   install_framework "${BUILT_PRODUCTS_DIR}/AHContainer/AHContainer.framework"
-  install_framework "${BUILT_PRODUCTS_DIR}/AHNetwork/AHNetwork.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/ALEither/ALEither.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/EitherResult/EitherResult.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework"
