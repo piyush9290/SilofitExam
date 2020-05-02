@@ -1,0 +1,122 @@
+PODS:
+  - AHContainer (0.2.2):
+    - ALEither
+  - AHNetwork (0.3.1):
+    - ALEither
+    - EitherResult
+  - ALEither (0.1.8)
+  - EitherResult (0.1.5)
+  - Firebase/Auth (6.20.0):
+    - Firebase/CoreOnly
+    - FirebaseAuth (~> 6.5.0)
+  - Firebase/CoreOnly (6.20.0):
+    - FirebaseCore (= 6.6.4)
+  - Firebase/Database (6.20.0):
+    - Firebase/CoreOnly
+    - FirebaseDatabase (~> 6.1.4)
+  - FirebaseAuth (6.5.0):
+    - FirebaseAuthInterop (~> 1.0)
+    - FirebaseCore (~> 6.6)
+    - GoogleUtilities/AppDelegateSwizzler (~> 6.5)
+    - GoogleUtilities/Environment (~> 6.5)
+    - GTMSessionFetcher/Core (~> 1.1)
+  - FirebaseAuthInterop (1.1.0)
+  - FirebaseCore (6.6.4):
+    - FirebaseCoreDiagnostics (~> 1.2)
+    - FirebaseCoreDiagnosticsInterop (~> 1.2)
+    - GoogleUtilities/Environment (~> 6.5)
+    - GoogleUtilities/Logger (~> 6.5)
+  - FirebaseCoreDiagnostics (1.2.2):
+    - FirebaseCoreDiagnosticsInterop (~> 1.2)
+    - GoogleDataTransportCCTSupport (~> 2.0)
+    - GoogleUtilities/Environment (~> 6.5)
+    - GoogleUtilities/Logger (~> 6.5)
+    - nanopb (~> 0.3.901)
+  - FirebaseCoreDiagnosticsInterop (1.2.0)
+  - FirebaseDatabase (6.1.4):
+    - FirebaseAuthInterop (~> 1.0)
+    - FirebaseCore (~> 6.0)
+    - leveldb-library (~> 1.22)
+  - GoogleDataTransport (5.0.0)
+  - GoogleDataTransportCCTSupport (2.0.0):
+    - GoogleDataTransport (~> 5.0)
+    - nanopb (~> 0.3.901)
+  - GoogleUtilities/AppDelegateSwizzler (6.5.2):
+    - GoogleUtilities/Environment
+    - GoogleUtilities/Logger
+    - GoogleUtilities/Network
+  - GoogleUtilities/Environment (6.5.2)
+  - GoogleUtilities/Logger (6.5.2):
+    - GoogleUtilities/Environment
+  - GoogleUtilities/Network (6.5.2):
+    - GoogleUtilities/Logger
+    - "GoogleUtilities/NSData+zlib"
+    - GoogleUtilities/Reachability
+  - "GoogleUtilities/NSData+zlib (6.5.2)"
+  - GoogleUtilities/Reachability (6.5.2):
+    - GoogleUtilities/Logger
+  - GTMSessionFetcher/Core (1.3.1)
+  - leveldb-library (1.22)
+  - nanopb (0.3.9011):
+    - nanopb/decode (= 0.3.9011)
+    - nanopb/encode (= 0.3.9011)
+  - nanopb/decode (0.3.9011)
+  - nanopb/encode (0.3.9011)
+  - RouterStateMachine (0.2.2):
+    - SwiftyCollection
+  - SwiftyCollection (1.0.6)
+
+DEPENDENCIES:
+  - AHContainer
+  - AHNetwork
+  - EitherResult
+  - Firebase/Auth
+  - Firebase/Database
+  - RouterStateMachine
+
+SPEC REPOS:
+  https://github.com/CocoaPods/Specs.git:
+    - AHContainer
+    - AHNetwork
+    - ALEither
+    - EitherResult
+    - Firebase
+    - FirebaseAuth
+    - FirebaseAuthInterop
+    - FirebaseCore
+    - FirebaseCoreDiagnostics
+    - FirebaseCoreDiagnosticsInterop
+    - FirebaseDatabase
+    - GoogleDataTransport
+    - GoogleDataTransportCCTSupport
+    - GoogleUtilities
+    - GTMSessionFetcher
+    - leveldb-library
+    - nanopb
+    - RouterStateMachine
+    - SwiftyCollection
+
+SPEC CHECKSUMS:
+  AHContainer: 870bb0204341298f60d40eacb6185c6a7e41a4ef
+  AHNetwork: 4aed90a3b1388f05be87467faefeb85949e3f762
+  ALEither: 57cfaba77b3a2c2e15741b16213b515d9bc839a6
+  EitherResult: 9a67a8cd25fa6d6f8ded0e7304ea2eb302bcbbc8
+  Firebase: fe7f74012742ab403451dd283e6909b8f1fb348a
+  FirebaseAuth: 648892fd0afeb27ef97c1d2e667329855f1004bc
+  FirebaseAuthInterop: a0f37ae05833af156e72028f648d313f7e7592e9
+  FirebaseCore: ed0a24c758a57c2b88c5efa8e6a8195e868af589
+  FirebaseCoreDiagnostics: e9b4cd8ba60dee0f2d13347332e4b7898cca5b61
+  FirebaseCoreDiagnosticsInterop: 296e2c5f5314500a850ad0b83e9e7c10b011a850
+  FirebaseDatabase: 0144e0706a4761f1b0e8679572eba8095ddb59be
+  GoogleDataTransport: a857c6a002d201b524dd4bc2ed7e7355ed07e785
+  GoogleDataTransportCCTSupport: 32f75fbe904c82772fcbb6b6bd4525bfb6f2a862
+  GoogleUtilities: ad0f3b691c67909d03a3327cc205222ab8f42e0e
+  GTMSessionFetcher: cea130bbfe5a7edc8d06d3f0d17288c32ffe9925
+  leveldb-library: 55d93ee664b4007aac644a782d11da33fba316f7
+  nanopb: 18003b5e52dab79db540fe93fe9579f399bd1ccd
+  RouterStateMachine: 9cc1a4d966b13844be38e2196dd2604256e1dd8a
+  SwiftyCollection: b97f5697570e7b4357db4e7fa2f6712a5a27cdab
+
+PODFILE CHECKSUM: 2d59bf6ea25c26ee7b64b2c4dd5b914bea789fb4
+
+COCOAPODS: 1.9.0
